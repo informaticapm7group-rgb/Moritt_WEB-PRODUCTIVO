@@ -1,0 +1,19 @@
+# Moritt Hermanos
+
+> Empresa chilena de construcción y soluciones industriales, con oficinas en Providencia (Santiago) y maestranza en Curicó. Ejecuta proyectos de obras civiles, frigoríficos industriales, aislamiento térmico y movimiento de tierras para la industria alimentaria, logística y manufacturera.
+
+## Soluciones
+
+- [Obras Civiles y Estructurales](https://moritthermanos.com/soluciones/obras-civiles-y-estructurales): Construcción integral de infraestructura industrial y comercial — naves industriales, estructuras de hormigón armado, fundaciones especiales, oficinas y plantas industriales.
+- [Frigoríficos Industriales](https://moritthermanos.com/soluciones/frigorificos-industriales): Diseño, instalación y mantención de sistemas de refrigeración para la industria alimentaria y logística — cámaras frigoríficas, túneles de congelado y prefrío, mantención preventiva y correctiva.
+- [Aislamiento Térmico](https://moritthermanos.com/soluciones/aislamiento-termico): Aislamiento de tuberías, ductos, muros y cielos; impermeabilización con poliurea; recubrimientos industriales anticorrosivos; auditorías energéticas.
+- [Movimiento de Tierras](https://moritthermanos.com/soluciones/movimiento-de-tierras): Excavaciones, nivelación, compactación de suelos, drenajes y preparación de fundaciones.
+
+## Empresa
+
+- [Nosotros](https://moritthermanos.com/nosotros): Historia, experiencia y equipo de Moritt Hermanos.
+- [Contacto](https://moritthermanos.com/contacto): Formulario de contacto, teléfonos, WhatsApp (+56 9 8908 1167) y direcciones (Guardia Vieja 202/404, Providencia; Cardenal Caro, Curicó).
+
+## Optional
+
+- [Soluciones (listado completo)](https://moritthermanos.com/soluciones): Vista general de todas las soluciones industriales.
