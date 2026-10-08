@@ -1,9 +1,11 @@
 # Block access to the git metadata (the production repo is cloned in the document root)
 RedirectMatch 404 /\.git
 
+DirectorySlash Off
 RewriteEngine On
 
-# Force HTTPS (Apache is behind a proxy on Webempresa; check X-Forwarded-Proto)
+# Apache is behind an nginx proxy: %{HTTPS} is never "on" and relative redirects come out as http://,
+# so every redirect uses an absolute https URL.
 RewriteCond %{HTTP:X-Forwarded-Proto} =http
 RewriteRule ^(.*)$ https://moritthermanos.com/$1 [R=301,L]
 
@@ -11,14 +13,12 @@ RewriteRule ^(.*)$ https://moritthermanos.com/$1 [R=301,L]
 RewriteCond %{HTTP_HOST} ^www\.moritthermanos\.com$ [NC]
 RewriteRule ^(.*)$ https://moritthermanos.com/$1 [R=301,L]
 
+# Canonical URLs have no trailing slash (matches the sitemap)
+RewriteRule ^(.+)/$ https://moritthermanos.com/$1 [R=301,L]
+
 # Prerendered routes live in <route>/index.html; serve them without a trailing-slash redirect.
 RewriteCond %{REQUEST_FILENAME}/index.html -f
 RewriteRule ^(.+)$ /$1/index.html [L]
 
+# Unknown routes get a real 404 with the prerendered 404 page
 ErrorDocument 404 /404/index.html
-
-# Fallback for any route not covered by prerender (e.g. a new route added without rebuilding):
-# let the client-side app handle it instead of a raw 404.
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.html [L]
