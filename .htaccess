@@ -1,3 +1,6 @@
+# Block access to the git metadata (the production repo is cloned in the document root)
+RedirectMatch 404 /\.git
+
 RewriteEngine On
 
 # Force HTTPS (Apache is behind a proxy on Webempresa; check X-Forwarded-Proto)
